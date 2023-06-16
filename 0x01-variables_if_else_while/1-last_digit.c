@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Print the value of n status: greater than, is zero and its not less than 6.
+ * main - greater than, is zero and its not less than 6.
  * Return: 0(success)
  */
 int main(void)
