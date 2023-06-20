@@ -11,9 +11,9 @@ int x, y, z, u, d;
 
 for (x = 0; x <= 9; x++)
 {
-for (y = 0; y <= 9;y++)
+for (y = 0; y <= 9; y++)
 {
-z = x *y;
+z = x * y;
 if (z > 9)
 {
 u = z % 10;
