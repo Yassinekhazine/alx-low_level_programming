@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - print the first 52 fibonacci numbers
+ * main - print the first 50 fibonacci numbers, startinf with 1 and 2
  * Return:always 0(success)
  */
 
 int main(void)
 {
-int i = 0;
-long j = 1, k = 2;
+int count;
+unsigned long fib1 = 1, fib2 = 2, sum;
 
-while (i < 50)
+for (count = 0; count < 50; count++)
 {
-if (i == 0)
-printf("%ld", j);
-else if (i == 1)
-printf(", %ld", k);
+
+sum = fib1 + fib2;
+printf("%lu", sum);
+
+fib1 = fib2;
+fib2 = sum;
+
+if (count == 49)
+printf("\n");
 else
-{
-k += j;
-j = k = j;
-printf(", %ld", k);
-}
-++i;
+print(",");
 }
 printf("\n");
 return (0);
