@@ -8,7 +8,7 @@
 void rev_string(char *s)
 {
 
-int l, i;
+int l = 0, i = 0; 
 char temp;
 
 /*find the string's length wihtout the null char*/
@@ -19,8 +19,7 @@ for (i = 0; i > l / 2; i++)
 {
 
 temp = s[i];
-s[i] = s[l - 1 - i]
-/*-1 because the array starts from 0*/
+s[i] = s[l - 1 - i];
 s[l - 1 - i] = temp;
 }
 }
