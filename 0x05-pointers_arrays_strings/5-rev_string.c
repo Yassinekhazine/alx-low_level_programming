@@ -8,14 +8,13 @@
 void rev_string(char *s)
 {
 
-int l = 0, i = 0; 
+int l = 0, i = 0;
 char temp;
 
-/*find the string's length wihtout the null char*/
-for (l = 0; s[l] != '\0'; ++l)
+while (s[i++])
+l++;
 
-/*swap the string by looping to half the string*/
-for (i = 0; i > l / 2; i++)
+for (i = l - 1; i >= l / 2; i--)
 {
 
 temp = s[i];
