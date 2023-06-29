@@ -20,4 +20,3 @@ dest[dest_len++] = src[index];
 
 return (dest);
 }
-
