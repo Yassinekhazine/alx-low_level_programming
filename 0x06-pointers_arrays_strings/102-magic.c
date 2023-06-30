@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - the program should print a[2] = 98, followed by a new line
+ * main - by adding line to the current code
+ * the program should print a[2] = 98,
+ * followed by a new line
  * Return: 0(success)
  */
 
@@ -13,6 +15,7 @@ int *p;
 
 a[2] = 1024;
 p = &n;
+
 /*
 * write your line of code here...
 * Remember:
