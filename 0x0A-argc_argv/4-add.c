@@ -5,21 +5,29 @@
  * main - it all starts here
  * @argc: the number of arguments
  * @argv: array of pointers to arguments
- * Return: 0(success)
+ * Return: If one of the numbers contains symbols that are non-digits is 1
+ * Otherwise will be 0
  */
 
 int main(int argc, char *argv[])
 {
-int sum = 0;
-char *c;
+int num, digit, sum = 0;
 
-while (--atgc)
+for (num = 1; num < argc; num++)
 {
-
-for (c = argv[argc]; *c; c++)
-if (*c < '0' || *c > '9')
-return (printf("Error\n"), 1);
-sum += atoi(argv[argc]);
+for (digit = 0; argv[num][digit]; digit++)
+{
+if (argv[num][digit] < '0' || argv[num][digit] > '9')
+{
+printf("Error\n");
+return (1);
 }
+}
+
+sum += atoi(argv[num]);
+}
+
 printf("%d\n", sum);
+
 return (0);
+}
