@@ -8,16 +8,13 @@
 void print_binary(unsigned long int n)
 {
 
-int i, count = 0;
-unsigned long int current;
-for (i = 63; i >= 0; i--)
+int i = sizeof(n) * 8, count = 0;
+while (i)
 {
 
-current = n >> i;
-if (current & 1)
+if (n & 1L << --b)
 {
-
-_putchar('1');
+_putchar('1')
 count++;
 }
 else if (count)
